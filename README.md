@@ -1,6 +1,4 @@
-# Portfolio-website
-
-# 🌟 Professional Portfolio Website
+# 🌟 Portfolio-website
 
 A stunning, modern portfolio website showcasing software development skills with advanced 3D animations and professional design.
 
@@ -30,7 +28,7 @@ Aspiring software developer with strong programming and analytical skills. Exper
 
 ## 🚀 Live Demo
 
-**[View Live Portfolio](https://your-username.github.io/portfolio-website)**
+**[🌐 View Live Portfolio](https://portfolio-website-git-main-chigullapally-sai-prakashs-projects.vercel.app/)**
 
 ## 🛠️ Tech Stack
 
@@ -187,9 +185,6 @@ portfolio-website/
 }
 ```
 
-### Add Your Photo
-- Add your professional photo to `/assets/`
-- Update the image source in the hero section
 
 ## 📱 Responsive Design
 
