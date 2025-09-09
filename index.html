@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chigullapally Sai Prakash - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="loading-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-text">SP</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="particles-canvas" class="particles-canvas"></canvas>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">Hello, I'm</div>
+                <h1 class="hero-name">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <h2 class="hero-title">Computer Science Engineering - Cyber Security</h2>
+                <p class="hero-subtitle">Aspiring cybersecurity professional with strong programming and analytical skills. Experienced in developing secure applications, blockchain solutions, and data analytics systems.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary hero-btn">
+                        <span>View Projects</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn--outline hero-btn">
+                        <span>Contact Me</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-text glass-card animate-on-scroll">
+                    <div class="section-subtitle">Professional Summary</div>
+                    <p>Aspiring cybersecurity professional with strong programming and analytical skills. Experienced in developing secure applications, blockchain solutions, and data analytics systems. Passionate about learning emerging technologies and contributing to innovative projects.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">🎓</div>
+                            <div class="detail-content">
+                                <h4>Education</h4>
+                                <p>B.Tech in Computer Science (Cyber Security)<br>
+                                <span class="highlight">MLR Institute of Technology</span><br>
+                                CGPA: <span class="highlight">8.52</span> (2022-2026)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-content">
+                                <h4>Location</h4>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🏆</div>
+                            <div class="detail-content">
+                                <h4>Achievement</h4>
+                                <p>CodeChef Problem Solver<br>
+                                <span class="highlight">200+ Problems Solved</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-section">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card animate-on-scroll">
+                            <div class="stat-icon">📚</div>
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Years of Study</div>
+                        </div>
+                        <div class="stat-card glass-card animate-on-scroll">
+                            <div class="stat-icon">💼</div>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                        <div class="stat-card glass-card animate-on-scroll">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-card glass-card animate-on-scroll">
+                            <div class="stat-icon">🔧</div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Latest</div>
+                        <h3>Frontend Developer Intern</h3>
+                        <h4>Gwing Software Technologies</h4>
+                        <span class="timeline-date">Oct 2024 - Dec 2024</span>
+                        <div class="timeline-achievements">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">⚡</div>
+                                <span>Acquired proficiency in React.js and modern frontend tools, improving development speed by 30%</span>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🚀</div>
+                                <span>Implemented interactive UI components, reducing page load time by 20%</span>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🔧</div>
+                                <span>Strengthened understanding of distributed application design through real-time user features</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Python Development Intern</h3>
+                        <h4>Codsoft</h4>
+                        <span class="timeline-date">Sep 2024 - Oct 2024</span>
+                        <div class="timeline-achievements">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🐍</div>
+                                <span>Gained practical experience with Python libraries, coding standards, and debugging practices</span>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">📈</div>
+                                <span>Applied Python libraries (random, tkinter) to create user-friendly interfaces, improving usability by 40%</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">GUI Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+            <div class="projects-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="analytics">Analytics</button>
+                <button class="filter-btn" data-filter="application">Application</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-card animate-on-scroll" data-category="blockchain" data-project="0">
+                    <div class="project-header">
+                        <div class="project-status status--success">Active</div>
+                        <div class="project-category">Blockchain</div>
+                    </div>
+                    <h3>Fake Product Identification by QR Code Using Blockchain</h3>
+                    <p class="project-description">Designed blockchain-backed system with unique QR codes for tamper-proof authenticity verification and product traceability.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">QR Code</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--secondary btn--sm" onclick="openProjectModal(0)">
+                            <span>View Details</span>
+                        </button>
+                        <a href="https://github.com/Saiprakassh" target="_blank" class="btn btn--outline btn--sm">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll" data-category="security" data-project="1">
+                    <div class="project-header">
+                        <div class="project-status status--info">Completed</div>
+                        <div class="project-category">Cybersecurity</div>
+                    </div>
+                    <h3>Steganography-Based Secure Data Transmission System</h3>
+                    <p class="project-description">Developed a secure image steganography application using Python, OpenCV, and AES encryption to embed and extract encrypted messages.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">AES-256</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">Cryptography</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--secondary btn--sm" onclick="openProjectModal(1)">
+                            <span>View Details</span>
+                        </button>
+                        <a href="https://github.com/Saiprakassh/Projects/blob/main/Steganography%20based%20secured-%20communication%20.md" target="_blank" class="btn btn--outline btn--sm">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll" data-category="analytics" data-project="2">
+                    <div class="project-header">
+                        <div class="project-status status--info">Completed</div>
+                        <div class="project-category">Data Analytics</div>
+                    </div>
+                    <h3>HR Analytics Dashboard</h3>
+                    <p class="project-description">Generated client-ready reports using SQL and Python, validated data accuracy, and maintained documentation of KPIs for decision-making.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--secondary btn--sm" onclick="openProjectModal(2)">
+                            <span>View Details</span>
+                        </button>
+                        <a href="https://github.com/Saiprakassh" target="_blank" class="btn btn--outline btn--sm">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll" data-category="application" data-project="3">
+                    <div class="project-header">
+                        <div class="project-status status--info">Completed</div>
+                        <div class="project-category">Application Development</div>
+                    </div>
+                    <h3>Bidirectional Translation System</h3>
+                    <p class="project-description">Developed a desktop-based Multilingual Translation Studio using Python and Tkinter, integrating Google Translate API to support real-time translation in 25+ languages.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">Google API</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn--secondary btn--sm" onclick="openProjectModal(3)">
+                            <span>View Details</span>
+                        </button>
+                        <a href="https://github.com/Saiprakassh/Projects" target="_blank" class="btn btn--outline btn--sm">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <div class="category-header">
+                            <div class="category-icon">💻</div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <div class="category-header">
+                            <div class="category-icon">🛠️</div>
+                            <h3>Technologies & Frameworks</h3>
+                        </div>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <div class="tech-icon">⚛️</div>
+                                <span>React.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🔗</div>
+                                <span>Blockchain</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">👁️</div>
+                                <span>OpenCV</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🖥️</div>
+                                <span>Tkinter</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">📊</div>
+                                <span>Streamlit</span>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🌐</div>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category glass-card animate-on-scroll">
+                        <div class="category-header">
+                            <div class="category-icon">🔐</div>
+                            <h3>Security & Tools</h3>
+                        </div>
+                        <div class="security-skills">
+                            <div class="security-item">
+                                <div class="security-icon">🛡️</div>
+                                <div class="security-content">
+                                    <h4>Network Security</h4>
+                                    <p>Authentication, Authorization, Secure Communications</p>
+                                    <div class="skill-level">
+                                        <div class="level-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-icon">🔒</div>
+                                <div class="security-content">
+                                    <h4>Cryptography</h4>
+                                    <p>AES-256, Steganography, Data Encryption</p>
+                                    <div class="skill-level">
+                                        <div class="level-fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-icon">🔍</div>
+                                <div class="security-content">
+                                    <h4>Steganography</h4>
+                                    <p>Data Hiding, Covert Communication</p>
+                                    <div class="skill-level">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-header">
+                        <div class="cert-badge sql">SQL</div>
+                        <div class="cert-date">Sep 2025</div>
+                    </div>
+                    <h3>SQL (Basic) Certification</h3>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-description">Demonstrated proficiency in SQL fundamentals, queries, and database operations.</p>
+                    <div class="cert-verification">
+                        <span class="verification-icon">✓</span>
+                        <span>Verified Credential</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-header">
+                        <div class="cert-badge java">Java</div>
+                        <div class="cert-date">Aug 2025</div>
+                    </div>
+                    <h3>Java Programming Certification</h3>
+                    <p class="cert-issuer">Simplilearn</p>
+                    <p class="cert-description">Comprehensive understanding of Java programming concepts and object-oriented programming.</p>
+                    <div class="cert-verification">
+                        <span class="verification-icon">✓</span>
+                        <span>Verified Credential</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-header">
+                        <div class="cert-badge security">Security</div>
+                        <div class="cert-date">Aug 2025</div>
+                    </div>
+                    <h3>Introduction to Cybersecurity</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Foundational knowledge in cybersecurity principles, threats, and protection methods.</p>
+                    <div class="cert-verification">
+                        <span class="verification-icon">✓</span>
+                        <span>Verified Credential</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-header">
+                        <div class="cert-badge python">Python</div>
+                        <div class="cert-date">Dec 2024</div>
+                    </div>
+                    <h3>Python Essentials 1</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-description">Fundamentals of Python programming, data structures, and algorithmic thinking.</p>
+                    <div class="cert-verification">
+                        <span class="verification-icon">✓</span>
+                        <span>Verified Credential</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info glass-card animate-on-scroll">
+                    <div class="contact-header">
+                        <h3>Let's Connect</h3>
+                        <p>Ready to discuss opportunities or collaborate on exciting projects? I'd love to hear from you!</p>
+                    </div>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:saisai96161@gmail.com" class="contact-link">saisai96161@gmail.com</a>
+                                <button class="copy-btn" onclick="copyToClipboard('saisai96161@gmail.com')">Copy</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+916301534774" class="contact-link">+91 6301534774</a>
+                                <button class="copy-btn" onclick="copyToClipboard('+916301534774')">Copy</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span class="contact-text">Hyderabad, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chigullapally-sai-prakash-99b511277" target="_blank" class="social-link linkedin">
+                            <div class="social-icon">💼</div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Saiprakassh" target="_blank" class="social-link github">
+                            <div class="social-icon">🐱</div>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form glass-card animate-on-scroll" id="contact-form">
+                    <div class="form-header">
+                        <h3>Send a Message</h3>
+                        <p>Have a project in mind? Let's discuss it!</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <div class="form-focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="form-focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <div class="form-focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        <div class="form-focus-border"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full-width submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-loader hidden">
+                            <div class="loader-spinner"></div>
+                        </div>
+                        <div class="btn-glow"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">SP</span>
+                    </div>
+                    <p>&copy; 2025 Chigullapally Sai Prakash. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/chigullapally-sai-prakash-99b511277" target="_blank" class="social-link">💼</a>
+                    <a href="https://github.com/Saiprakassh" target="_blank" class="social-link">🐱</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="modal-duration" id="modal-duration"></span>
+                    <span class="modal-status" id="modal-status"></span>
+                </div>
+                <div class="modal-description" id="modal-description"></div>
+                <div class="modal-tech" id="modal-tech"></div>
+                <div class="modal-achievements">
+                    <h4>Key Features & Achievements:</h4>
+                    <ul id="modal-achievements-list"></ul>
+                </div>
+                <div class="modal-actions">
+                    <a id="modal-github-link" href="#" target="_blank" class="btn btn--primary">
+                        <span>View on GitHub</span>
+                    </a>
+                    <button onclick="closeProjectModal()" class="btn btn--outline">
+                        <span>Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
